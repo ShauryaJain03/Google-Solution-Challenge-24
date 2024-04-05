@@ -19,28 +19,33 @@ const responsive = {
 const sliderImageUrl = [
   {
     name: "Cardiology",
-    url: "https://www.nm.org/-/media/northwestern/healthbeat/images/health%20library/nm-ten-signs-cardiologist_preview.jpg",
+    url: "/cardio.jpg",
     link:"/user/heart"
   },
   {
     name: "Diabetes",
-    url: "https://d18yrmqbzi0q7a.cloudfront.net/wp-content/uploads/diabetes-symptoms-and-treatment.jpg",
+    url: "/diabetes.jpg",
     link:"/user/diabetes"
   },
   {
     name: "Nephrology",
-    url: "https://my.clevelandclinic.org/-/scassets/images/org/health/articles/24214-nephrologist",
+    url: "/nephro.jpg",
     link:"/user/kidney"
   },
   {
     name: "Obs/Gyn",
-    url: "https://sa1s3optim.patientpop.com/assets/images/provider/photos/2329605.jpg",
+    url: "/preg.jpg",
     link:"/user/pregnancy"
   },
   {
     name: "Neurology",
-    url: "https://www.shutterstock.com/image-photo/brain-surgeon-neurologist-doctor-explaining-260nw-1754977193.jpg",
+    url: "/neuro.jpg",
     link:"/user/alziemer"
+  },
+  {
+    name:"Breast Cancer",
+    url:"/breastcancer.jpg",
+    link:"/user/breastCancer"
   }
 ];
 const Slider = () => {

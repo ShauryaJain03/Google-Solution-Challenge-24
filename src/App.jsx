@@ -12,6 +12,7 @@ import AlzheimerForm from "./pages/Alziemer";
 import SignUp from "./pages/SignUp";
 import { ToastContainer } from "react-toastify";
 import PrivateRoute from "./pages/PrivateRoute";
+import BreastCancerForm from "./pages/BreastCancer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="kidney" element={<KidneyDiseaseForm />} />
           <Route path="pregnancy" element={<PregnancyRiskForm />} />
           <Route path="alziemer" element={<AlzheimerForm />} />
+          <Route path="breastCancer" element={<BreastCancerForm />} />
         </Route>
       </Routes>
       <ToastContainer />

@@ -14,13 +14,12 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Navbar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { useState } from "react";
-
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth,db } from "../components/Firebase";
 import { setDoc,doc } from "firebase/firestore";
 import { toast } from "react-toastify";
 import { Grid } from "@mui/material";
+import { useState } from "react";
 function SignUp() {
 
 
@@ -84,6 +83,11 @@ function Register() {
        toast.success("User Registered Succesfully!",{
         position:"top-left"
        })
+
+       setTimeout(() => {
+        window.location.href="/login"
+      }, 2000);
+
     }catch(err){
         console.log(err);
         toast.success(err.message,{
